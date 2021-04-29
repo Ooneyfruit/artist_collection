@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Xml;
 using System.Net;
 
-namespace artist_collector //Environment.Exit(0);
+namespace artist_collection //Environment.Exit(0);
 {
     struct Song
     {
@@ -131,7 +131,7 @@ namespace artist_collector //Environment.Exit(0);
     {
         static void Main(string[] args)
         {
-            User user = new User("Ooneyfruit","1762d9812e91c8a8ef1f45ecf4eeecf3");
+            User user = new User("<enter username>","<enter api key>");
             user.DownloadTopTracks();
             user.FindNewTracks();
         }
